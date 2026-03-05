@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 07:31:37 by codespace         #+#    #+#             */
-/*   Updated: 2026/03/04 07:44:18 by codespace        ###   ########.fr       */
+/*   Updated: 2026/03/05 07:08:21 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,11 @@ int	stack_size(t_node *stack)
 		stack = stack->next;
 	}
 	return (n);
+}
+
+int	abs_val(int x)
+{
+	if (x < 0)
+		return (-x);
+	return (x);
 }

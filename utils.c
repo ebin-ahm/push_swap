@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 07:52:21 by codespace         #+#    #+#             */
-/*   Updated: 2026/03/04 08:17:55 by codespace        ###   ########.fr       */
+/*   Updated: 2026/03/05 07:08:00 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,6 @@ void	putstr_fd(const char *s, int fd)
 		return ;
 	while (s[i])
 		write(fd, &s[i++], 1);
-}
-
-int	abs_val(int x)
-{
-	if (x < 0)
-		return (-x);
-	return (x);
 }
 
 static int	word_count(const char *s, char c)
